@@ -19,29 +19,9 @@
         value="This content will always face you."
         look-at="[gps-camera]"
         scale="120 120 120"
-        gps-entity-place="latitude: 34.887118; longitude: 135.201391;"
+        gps-entity-place="latitude: 34.885642; longitude: 135.202318;"
       ></a-text>
       <a-camera gps-camera rotation-reader look-controls> </a-camera>
     </a-scene>
-
-    <script type="text/javascript">
-        if (
-                DeviceMotionEvent &&
-                DeviceMotionEvent.requestPermission &&
-                typeof DeviceMotionEvent.requestPermission === 'function'
-                )
-            {
-                DeviceMotionEvent.requestPermission();
-            }
-        
-            if (
-                DeviceOrientationEvent &&
-                DeviceOrientationEvent.requestPermission &&
-                typeof DeviceOrientationEvent.requestPermission === 'function'
-                )
-            {
-                DeviceOrientationEvent.requestPermission();
-            }
-        </script>
   </body>
 </html>
