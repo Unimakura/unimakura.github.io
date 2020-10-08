@@ -23,5 +23,25 @@
       ></a-text>
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
+    
+    <script type="text/javascript">
+        if (
+                DeviceMotionEvent &&
+                DeviceMotionEvent.requestPermission &&
+                typeof DeviceMotionEvent.requestPermission === 'function'
+                )
+            {
+                DeviceMotionEvent.requestPermission();
+            }
+        
+            if (
+                DeviceOrientationEvent &&
+                DeviceOrientationEvent.requestPermission &&
+                typeof DeviceOrientationEvent.requestPermission === 'function'
+                )
+            {
+                DeviceOrientationEvent.requestPermission();
+            }
+        </script>
   </body>
 </html>
